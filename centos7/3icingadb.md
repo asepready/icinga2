@@ -5,7 +5,7 @@ icinga2 feature enable icingadb
 systemctl restart icinga2
 
 # Installing Icinga DB Package
-yum install icingadb
+yum install -y icingadb
 
 # Add MariaDB Repository
 curl -sS https://downloads.mariadb.com/MariaDB/mariadb_repo_setup | sudo bash
