@@ -1,6 +1,6 @@
 ```sh
 # Set up Redis Server 
-yum install icingadb-redis
+yum install -y icingadb-redis
 
 ## Run Icinga DB Redis 
 systemctl enable --now icingadb-redis && systemctl start icingadb-redis && systemctl status icingadb-redis

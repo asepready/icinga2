@@ -1,0 +1,10 @@
+
+/**
+ * The ApiUser objects are used for authentication against the API.
+ */
+object ApiUser "root" {
+  password = "75a3f4f4af752c48"
+  // client_cn = ""
+
+  permissions = [ "*" ]
+}

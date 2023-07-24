@@ -1,5 +1,9 @@
 ```sh
 #  Icinga Web 2
+# User Group 
+groupadd --system icingaweb2
+usermod -a -G icingaweb2 apache
+
 # Let’s install the SCL repository, we’ll need it for Icinga Web 2
 yum install -y centos-release-scl
 
@@ -26,7 +30,5 @@ icingacli setup token show
 # Start Web Setup ¶
 # /icingaweb2/setup
 
-# User Group 
-groupadd --system icingaweb2
-usermod -a -G icingaweb2 apache
+
 
