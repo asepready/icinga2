@@ -32,9 +32,6 @@ CREATE DATABASE icingaweb;
 CREATE USER 'icingaweb'@'localhost' IDENTIFIED BY 'icingaweb';
 GRANT ALL PRIVILEGES ON icingaweb.* TO 'icingaweb'@'localhost';
 
-CREATE DATABASE director CHARACTER SET 'utf8';
-GRANT ALL ON director.* TO 'director'@'localhost' IDENTIFIED BY 'director';
-
 FLUSH PRIVILEGES;
 
 \q
@@ -51,19 +48,5 @@ icinga2 feature enable icingadb && systemctl restart icinga2
 systemctl enable --now icingadb && systemctl start icingadb && systemctl status icingadb
 systemctl restart icingadb && systemctl status icingadb
 
-#nano director.sh
-#chmod +x director.sh
-#./director.sh
 
-#mysql -u root -p'8JhRykLKCrV48cYh' director < /usr/share/icingaweb2/modules/director/schema/mysql.sql
-
-#icingacli module enable director
-
-#useradd -r -g icingaweb2 -d /var/lib/icingadirector -s /bin/false icingadirector
-#install -d -o icingadirector -g icingaweb2 -m 0750 /var/lib/icingadirector
-#MODULE_PATH=/usr/share/icingaweb2/modules/director
-#cp "${MODULE_PATH}/contrib/systemd/icinga-director.service" /etc/systemd/system/
-#systemctl daemon-reload
-#systemctl enable icinga-director.service
-#systemctl start icinga-director.service
 
