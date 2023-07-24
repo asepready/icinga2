@@ -1,4 +1,7 @@
 ```sh
+# Install Package 
+yum install icinga-director
+
 # Create database and permission for director
 mysql -u root -p'8JhRykLKCrV48cYh'
 
