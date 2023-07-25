@@ -31,8 +31,8 @@
                 "locked": false,
                 "rotation": 0,
                 "svg": "<svg width=\"106\" height=\"25\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">10.0.0.21/24</text></svg>",
-                "x": -44,
-                "y": -44,
+                "x": -14,
+                "y": -48,
                 "z": 2
             },
             {
@@ -80,7 +80,7 @@
             },
             {
                 "filters": {},
-                "link_id": "168c02e7-5527-4067-9044-4457506106eb",
+                "link_id": "42cb45b9-2c94-4a0a-9850-2e650b38d294",
                 "link_style": {},
                 "nodes": [
                     {
@@ -90,7 +90,7 @@
                             "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
                             "text": "e1",
                             "x": 2,
-                            "y": 39
+                            "y": 38
                         },
                         "node_id": "40b58384-aa5e-4664-9ce6-c0e2c56aeb45",
                         "port_number": 1
@@ -104,7 +104,7 @@
                             "x": 57,
                             "y": 11
                         },
-                        "node_id": "17d6562c-a4b6-4c00-8705-df3eb4fabac3",
+                        "node_id": "9e61a9c2-6adb-4be1-ac6c-faf13e4398ec",
                         "port_number": 0
                     }
                 ],
@@ -247,7 +247,7 @@
                 },
                 "locked": false,
                 "name": "icinga2",
-                "node_id": "17d6562c-a4b6-4c00-8705-df3eb4fabac3",
+                "node_id": "9e61a9c2-6adb-4be1-ac6c-faf13e4398ec",
                 "node_type": "qemu",
                 "port_name_format": "Ethernet{0}",
                 "port_segment_size": 0,
@@ -281,7 +281,7 @@
                     "kernel_image_md5sum": null,
                     "legacy_networking": false,
                     "linked_clone": true,
-                    "mac_address": "0c:d6:56:2c:00:00",
+                    "mac_address": "0c:61:a9:c2:00:00",
                     "on_close": "power_off",
                     "options": "",
                     "platform": "x86_64",
@@ -295,8 +295,8 @@
                 "symbol": ":/symbols/classic/server.svg",
                 "template_id": "f13dd9b7-afbf-4340-aa5c-c7c6d9d09600",
                 "width": 49,
-                "x": -358,
-                "y": -92,
+                "x": -364,
+                "y": -91,
                 "z": 1
             }
         ]
