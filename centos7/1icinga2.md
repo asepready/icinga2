@@ -1,11 +1,32 @@
 ```sh
 # Add Icinga Package Repository 
-yum install wget -y
+yum install -y wget
+
 tps://packages.icinga.com/icinga.key
 wget https://packages.icinga.com/centos/ICINGA-release.repo -O /etc/yum.repos.d/ICINGA-release.repo
 
 yum install -y epel-release
 yum install -y git curl make gcc nano net-tools tar unzip zip python-devel python-pip python-setuptools
+
+## Install NTP Packages
+yum install -y ntp 
+
+## Configure NTP Servers
+nano /etc/ntp.conf
+
+##!/etc/ntp.conf
+#server 0.centos.pool.ntp.org iburst
+#server 1.centos.pool.ntp.org iburst
+#server 2.centos.pool.ntp.org iburst
+#server 3.centos.pool.ntp.org iburst
+server 0.id.pool.ntp.org iburst
+server 1.id.pool.ntp.org iburst
+server 2.id.pool.ntp.org iburst
+server 3.id.pool.ntp.org iburst
+
+systemctl enable ntpd && systemctl start ntpd && systemctl status ntpd
+ntpq -p
+timedatectl set-timezone Asia/Jakarta
 
 ## Install Icinga 2 
 yum install -y icinga2-selinux
