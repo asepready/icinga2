@@ -1,6 +1,6 @@
 # icinga2
 ## Learn Network Monitoring with Icinga2
-## Centos 7
+## Implementation on Centos 7
 - icinga2
 - icingadb (mariadb)
 - icingadb-redis (redis)
